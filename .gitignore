@@ -4,3 +4,6 @@ OVMF_VARS*.fd
 *.log
 esp/
 Build/
+
+# Uploaded vendor BIOS + decompressed extract (do not commit)
+bios-analysis/
