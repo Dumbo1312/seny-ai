@@ -1,0 +1,32 @@
+## @file
+#  SenySmbios - DXE driver that enumerates and produces SMBIOS records.
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SenySmbios
+  FILE_GUID                      = 3D0D9C0B-8E6A-49C2-9F2A-6B5C4E1D7A20
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = SenySmbiosEntry
+
+[Sources]
+  SenySmbios.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  DebugLib
+
+[Protocols]
+  gEfiSmbiosProtocolGuid         ## CONSUMES
+
+[Depex]
+  gEfiSmbiosProtocolGuid

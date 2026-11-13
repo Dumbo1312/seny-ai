@@ -31,3 +31,4 @@
 
 [Components]
   SenyPkg/SenyDxe/SenyDxe.inf
+  SenyPkg/SenySmbios/SenySmbios.inf
