@@ -1,0 +1,6 @@
+# Firmware build artifacts / logs from the DXE lab (reproducible)
+OVMF_CODE.fd
+OVMF_VARS*.fd
+*.log
+esp/
+Build/

@@ -1,0 +1,17 @@
+## @file
+#  SenyPkg - a small lab package for exploring DXE drivers and
+#  boot-time protocol communication under OVMF/QEMU.
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = SenyPkg
+  PACKAGE_GUID                   = 15C608C1-1DD9-4C07-A8D6-17FE50002506
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[Protocols]
+  ## The Seny demo protocol, published by SenyDxe.
+  gSenyProtocolGuid = { 0xC7431E5E, 0xA095, 0x457D, { 0xA0, 0x6E, 0xD7, 0x99, 0x5B, 0xBE, 0xF6, 0x75 } }

@@ -1,0 +1,30 @@
+## @file
+#  SenyDxe - tier-1 DXE driver that installs SENY_PROTOCOL.
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SenyDxe
+  FILE_GUID                      = 99AFA59F-F814-4462-AD4F-DAAE7F441E01
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = SenyDxeEntry
+
+[Sources]
+  SenyDxe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  SenyPkg/SenyPkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
+  DebugLib
+
+[Protocols]
+  gSenyProtocolGuid              ## PRODUCES
+
+[Depex]
+  TRUE
