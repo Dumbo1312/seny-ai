@@ -7,3 +7,7 @@ Build/
 
 # Uploaded vendor BIOS + decompressed extract (do not commit)
 bios-analysis/
+
+# Python caches
+__pycache__/
+*.pyc
